@@ -1,49 +1,5 @@
 
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const audio = document.getElementById("audio");
-//     const playPause = document.getElementById("play");
-//     const progressBar = document.querySelector(".player_level");
-//     const startTime = document.querySelector(".star");
-//     const endTime = document.querySelector(".end");
-
-//     // Inicializar la barra de progreso en cero al cargar la página
-//     progressBar.value = 0;
-//     progressBar.max = audio.duration;
-
-//     // Actualizar la barra de progreso a medida que la canción se reproduce
-//     audio.addEventListener("timeupdate", () => {
-//         progressBar.value = audio.currentTime;
-//         startTime.textContent = formatTime(audio.currentTime);
-//         endTime.textContent = formatTime(audio.duration - audio.currentTime);
-//     });
-
-//     // Formato de tiempo
-//     function formatTime(seconds) {
-//         const minutes = Math.floor(seconds / 60);
-//         const secs = Math.floor(seconds % 60);
-//         return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
-//     }
-
-//     playPause.addEventListener("click", () => {
-//         if (audio.paused || audio.ended) {
-//             playPause.querySelector(".pause-btn").classList.toggle("hide");
-//             playPause.querySelector(".play-btn").classList.toggle("hide");
-//             audio.play();
-//         } else {
-//             audio.pause();
-//             playPause.querySelector(".pause-btn").classList.toggle("hide");
-//             playPause.querySelector(".play-btn").classList.toggle("hide");
-//         }
-//     });
-
-//     // Actualizar el tiempo y la barra de progreso cuando el usuario la cambia manualmente
-//     progressBar.addEventListener("input", () => {
-//         audio.currentTime = progressBar.value;
-//     });
-// });
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const audio = document.getElementById("audio");
     const playPause = document.getElementById("play");
